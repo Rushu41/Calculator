@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-400">
+  <section  class="flex flex-col justify-center items-center min-h-screen">
+     
+  <div id="main" class= "p-3 bg-[#2221229a]  text-black border-4 rounded-lg  ">
+    <div class="grid grid-cols-4 gap-2 mb-2 w-full">
+        <input id="display" type="text" placeholder="0" class="bg-[#b4f2ff] border-2 border-black rounded-lg col-span-4 text-right p-2 w-full h-20">
+    </div>
+    <div class="grid grid-cols-4 gap-2">
+        <button onclick="clr()" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">AC</button>
+        <button onclick="delet()" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">DEL</button>
+        <button onclick="clik('/')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">/</button>
+        <button onclick="clik('%')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">%</button>
+        <button onclick="clik('7')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">7</button>
+        <button onclick="clik('8')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">8</button>
+        <button onclick="clik('9')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">9</button>
+        <button onclick="clik('*')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">*</button>
+        <button onclick="clik('4')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">4</button>
+        <button onclick="clik('5')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">5</button>
+        <button onclick="clik('6')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">6</button>
+        <button onclick="clik('+')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">+</button>
+        <button onclick="clik('1')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">1</button>
+        <button onclick="clik('2')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">2</button>
+        <button onclick="clik('3')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">3</button>
+        <button onclick="clik('-')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">-</button>
+        <button onclick="clik('0')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">0</button>
+        <button onclick="clik('00')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">00</button>
+        <button onclick="clik('.')" class="btn border-5 rounded-2xl text-white bg-black shadow-2xl w-30 h-14">.</button>
+        <button onclick="calculate('=')" class="btn border-5 rounded-2xl text-white bg-orange-500 shadow-2xl w-30 h-14">=</button>
+    </div>
+  </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
